@@ -1,0 +1,28 @@
+.timeline_1 {
+  border-radius: 12px !important;
+  border: 1px solid #eee !important;
+  background: var(--06, #fff) !important;
+  text-align: center;
+  width: 500px;
+  height: 313px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+}
+.create_now {
+
+  width: 400px;
+  padding: 12px 24px;
+  gap: 12px;
+}
+
+.timeline_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create_text{
+    margin-bottom: 60px;
+}

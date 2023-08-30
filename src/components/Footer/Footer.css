@@ -1,0 +1,5 @@
+.footer_bg {
+  background: #212327;
+  color: var(--06, #fff);
+  margin-bottom: 0 !important;
+}

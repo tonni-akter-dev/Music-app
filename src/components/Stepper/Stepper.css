@@ -1,0 +1,9 @@
+.stepper{
+    background-image: url('../../assets/stepperbg.png');
+}
+.vertical-timeline::before {
+    background-color: black; /* Change the color as needed */
+  }
+  
+  /* Additional styles if necessary */
+  

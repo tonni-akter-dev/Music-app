@@ -1,0 +1,29 @@
+.bg_dark {
+    background-color: #212327 !important;
+    color: #DCDADA !important;
+
+    margin: 0 auto !important;
+}
+.navbar{
+    height: 100px !important;
+}
+.active {
+    color: #F2E2C5 !important;
+    background-color: #212327 !important;
+}
+
+.pending {
+    color: #DCDADA !important;
+
+}
+
+.pending:hover {
+
+    color: #DCDADA !important;
+}
+
+.logo_image {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
