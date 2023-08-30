@@ -1,9 +1,12 @@
 import React from "react";
 import logo from "../../assets/Logo.png";
+import cart from "../../assets/cart.png"
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { NavLink, Outlet } from "react-router-dom";
 import "./Navigation.css";
 import Footer from "../Footer/Footer";
+import { RiNotificationLine } from "react-icons/ri";
+
 const Navigation = () => {
   const userData = JSON.parse(localStorage.getItem("users"));
   return (
@@ -92,7 +95,21 @@ const Navigation = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <div className=" bell-notification" current-count="3">
+            <a className="notification">
+              <RiNotificationLine />
+            </a>
+          </div>
+          <div className=" bell-notification" current-count="3">
+            <a className="notification">
+              <RiNotificationLine />
+            </a>
+          </div>
+          <div className=" bell-notification" current-count="3">
+            <a className="notification">
+            <img src={cart} alt="" />
+            </a>
+          </div>
         </div>
       </div>
       <Outlet />

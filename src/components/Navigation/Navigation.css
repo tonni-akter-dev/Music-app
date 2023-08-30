@@ -1,29 +1,54 @@
 .bg_dark {
-    background-color: #212327 !important;
-    color: #DCDADA !important;
+  background-color: #212327 !important;
+  color: #dcdada !important;
 
-    margin: 0 auto !important;
+  margin: 0 auto !important;
 }
-.navbar{
-    height: 100px !important;
+.navbar {
+  height: 100px !important;
 }
 .active {
-    color: #F2E2C5 !important;
-    background-color: #212327 !important;
+  color: #f2e2c5 !important;
+  background-color: #212327 !important;
 }
-
+.bell-notification {
+  color: white !important;
+  background-color: #212327 !important;
+  position: relative;
+  margin-right: 24px;
+  /* padding: 10px 12px !important; */
+}
+.bell-notification .notification {
+  font-size: 24px !important;
+  /* padding: 10px 12px !important; */
+}
+.notification image{
+   height: 24px !important;
+   width: 24px !important;
+}
+.bell-notification::after {
+  content: attr(current-count);
+  width: 19.216px;
+  height: 18.807px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:-15px;
+  right: -20px;
+}
 .pending {
-    color: #DCDADA !important;
-
+  color: #dcdada !important;
 }
 
 .pending:hover {
-
-    color: #DCDADA !important;
+  color: #dcdada !important;
 }
 
 .logo_image {
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
 }
