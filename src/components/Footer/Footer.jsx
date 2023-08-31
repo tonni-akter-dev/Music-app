@@ -2,8 +2,8 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <>
-      <footer class="footer footer_bg py-4 bottom-0">
+    
+      <footer class="footer footer_bg py-4 bottom-0 ">
         <div class="container mx-auto px-8 md:flex md:justify-between md:items-center">
           <div class="mb-4 md:mb-0 md:space-x-8 md:flex">
             <a href="#" class=" hover:text-gray-800">
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
+  
   );
 };
 

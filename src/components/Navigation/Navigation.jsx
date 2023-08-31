@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/Logo.png";
 import cart from "../../assets/cart.png"
-import { IoMdNotificationsOutline } from "react-icons/io";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import "./Navigation.css";
 import Footer from "../Footer/Footer";
-import { RiNotificationLine } from "react-icons/ri";
 
 const Navigation = () => {
   const userData = JSON.parse(localStorage.getItem("users"));
+  const [isResponsive, setIsResponsive] = useState(false);
+
+  console.log(isResponsive, "klkl");
+
+  const toggleResponsive = () => {
+    console.log("clickl")
+    // setIsResponsive(true);
+    setIsResponsive(prevState => !prevState);
+  };
   return (
-    <>
-      <div className="navbar bg_dark ">
+    <div className="relative h-screen">
+      {/* <div className="navbar bg_dark ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -79,15 +86,11 @@ const Navigation = () => {
               <NavLink to="/contact">Contact Us</NavLink>
             </li>
             <li>
-              {userData.isAuthenticated == true ? (
-                <NavLink to="/support">Support</NavLink>
-              ) : (
-                <NavLink to="/support">Support</NavLink>
-              )}
+              <NavLink to="/support">Support</NavLink>
             </li>
             <li>
               <input
-                type="text"
+                type="text" 
                 placeholder="Find your favourite artists"
                 className="input input-bordered w-full max-w-xs"
               />
@@ -105,16 +108,35 @@ const Navigation = () => {
               <RiNotificationLine />
             </a>
           </div>
-          <div className=" bell-notification" current-count="3">
-            <a className="notification">
-            <img src={cart} alt="" />
-            </a>
-          </div>
+
+        </div>
+      </div> */}
+      <div class="nav_container">
+        <div id="myTopnav" className={`topnav ${isResponsive ? 'responsive' : ''}`}>
+          <Link to="#home" class="active"> <img class="logo" src={logo} alt="" /></Link>
+          <Link to="/" class="navlinks">Home </Link>
+          <Link to="/accounts" class="navlinks">Accounts</Link>
+          <Link to="/" class="navlinks">Payment Information</Link>
+          <Link to="/" class="navlinks">Contact Us</Link>
+          <Link to="/" class="navlinks support">Support</Link>
+          <Link class="navlinks"><input type="text" name="" id="" /> </Link>
+          <Link to="/">
+            <i class="fa-regular fa-bell notification"></i>
+          </Link>
+          <Link to="/">
+            <i class="fa-solid fa-bag-shopping notification"></i>
+          </Link>
+          <Link to="/">
+            <i class="fa-regular fa-user notification"></i>
+          </Link>
+          <Link to="/" class="icon" onClick={toggleResponsive}>
+            <i class="fa fa-bars"></i>
+          </Link>
         </div>
       </div>
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 
