@@ -1,5 +1,25 @@
-.footer_bg {
-  background: #212327;
-  color: var(--06, #fff);
-  margin-bottom: 0 !important;
+.container{
+  max-width: 1320px !important;
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  color: var(--06, #FFF);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background-color: black;
+padding-top:24px ;
+padding-bottom: 22px;
+}
+.Privacy{
+margin-left: 20px;
+}
+
+.footer_bg{
+  background-color: black ;
+
 }

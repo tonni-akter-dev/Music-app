@@ -117,8 +117,8 @@ const Navigation = () => {
           <Link to="/accounts" class="navlinks">Accounts</Link>
           <Link to="/" class="navlinks">Payment Information</Link>
           <Link to="/" class="navlinks">Contact Us</Link>
-          <Link to="/" class="navlinks support">Support</Link>
-          <Link class="navlinks"><input type="text" name="" id="" /> </Link>
+          <Link to="/support" class="navlinks support">Support</Link>
+          <Link class="navlinks"><input type="text" name="" id="" className="input_design" /> </Link>
           <Link to="/">
             <i class="fa-regular fa-bell notification"></i>
           </Link>

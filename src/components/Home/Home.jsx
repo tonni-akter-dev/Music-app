@@ -7,9 +7,9 @@ import Stepper from "../Stepper/Stepper";
 const Home = () => {
   return (
     <>
-      {/* <Login />
-      <Payment /> */}
-      <Stepper/>
+      <Login />
+      <Payment />
+      {/* <Stepper/> */}
     </>
   );
 };

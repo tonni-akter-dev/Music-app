@@ -231,12 +231,10 @@
     .timeline-items::before {
         left: 7px;
     }
-
     .timeline-item:nth-child(odd) {
         padding-right: 0;
         text-align: left;
     }
-
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         padding-left: 37px;
@@ -244,6 +242,8 @@
 
     .timeline-dot {
         left: -9px !important;
+        height: 80px;
+        width: 80px;
     }
 
     .timeline-items::before {
@@ -257,7 +257,7 @@
     }
 
     .timeline-content {
-        margin-left: 100px;
+        margin-left: 50px;
     }
-
+   
 }

@@ -1,7 +1,30 @@
+.container {
+  max-width: 1320px !important;
+  margin: auto;
+  margin-top: 94px !important;
+}
+
 .payment_1 {
   background-color: #8e61470d;
   text-align: center;
   padding: 43px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.payment_2 {
+  background-color: #8e61470d;
+  text-align: center;
+  padding: 43px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
 
 .text_design {
@@ -23,7 +46,7 @@
 
 .get_started_btn {
   display: flex;
-  width: 472px;
+
   padding: 12px 24px;
   justify-content: center;
   align-items: center;
@@ -49,7 +72,6 @@
 
 .get_started_btn1 {
   display: flex;
-  width: 472px;
   padding: 12px 24px;
   justify-content: center;
   align-items: center;

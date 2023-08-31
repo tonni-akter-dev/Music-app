@@ -21,17 +21,44 @@ const Login = () => {
   };
   return (
     <div className="container">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8 ">
-        <div className="md:col-span-1">
-          <img className="frame" src={Frame} alt="Example" />
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="">
+          <img
+            src={Frame}
+            alt="Sample image" />
         </div>
-        {/* Second Column - Login Page */}
-        <div class="relative flex flex-col items-center justify-center h-screen overflow-hidden">
-          <div class="w-full p-6 bg-white  border-gray-600 rounded-md shadow-md lg:max-w-lg">
-            <h1 class="text-3xl font-semibold text-center text-gray-700">
-              login/ registration
-            </h1>
-            <form class="space-y-4">
+        <form className="form_design md:py-5">
+          <div className="">
+            <p className="mx-4 mb-0 text-center login_header">Login/Register</p>
+            <label htmlFor="">Email</label>
+            <input className="login_input text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded" type="text" placeholder="Email Address" />
+
+            <label htmlFor="">Password</label>
+            <input className="login_input text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4" type="password" placeholder="Password" />
+            <button class="btn btn-neutral input_field_design" onClick={handleLogin}>
+              Sign In
+            </button>
+            <div className="text-xs text-gray-600 text-center">
+              <span> Already have an account? </span>
+              <a
+                href="#"
+                class="sign_up_link"
+              >
+                Sign up
+              </a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  );
+};
+
+export default Login;
+
+
+/* 
+  <form class="space-y-4">
               <div>
                 <label class="label">
                   <span class="text-base label-text">Email</span>
@@ -70,11 +97,57 @@ const Login = () => {
                 </a>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+*/
 
-export default Login;
+/* 
+
+<div className="login_page_design ">
+        <div className="">
+          <img className="frame" src={Frame} alt="Example" />
+        </div>
+        <form class="space-y-4 form_container">
+          <h1 class="text-3xl font-semibold text-center text-gray-700">
+            login/ registration
+          </h1>
+          <div>
+            <label class="label">
+              <span class="text-base label-text">Email</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Your Email"
+              class=" input input-bordered input_field_design"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div>
+            <label class="label">
+              <span class="text-base label-text">Password</span>
+            </label>
+            <input
+              type="password"
+              placeholder="Your Password"
+              class="input_field_design input input-bordered"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+
+          <div>
+            <button class="btn btn-neutral input_field_design" onClick={handleLogin}>
+              Sign In
+            </button>
+          </div>
+          <div className="text-xs text-gray-600">
+            <span> Already have an account? </span>
+            <a
+              href="#"
+              class="sign_up_link"
+            >
+              Sign up
+            </a>
+          </div>
+        </form>
+
+      </div>
+
+*/
