@@ -83,74 +83,38 @@
 }
 
 .timeline-dot {
-    height: 80px;
-    width: 80px;
-    background-color: #eaa023;
+    height: 100px;
+    width: 100px;
+    background-image: url('../../assets/stepperDot.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
     border-radius: 50%;
-    top: 40% !important;
-    left: 47% !important;
+    top: 36% !important;
+    left: 46% !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    color: var(--06, #FFF);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 60px */
 }
 
 .timeline-content {
     background-color: #EEE;
     color: var(--04, #202227);
-
     width: 484px;
     height: 244px;
     border-radius: 12px;
     border: 1px solid var(--03, #8E6147);
     background: #EEE;
-
-    /* 01 */
     box-shadow: 0px 7px 62px -2px rgba(0, 0, 0, 0.18);
 }
 
-.parent_story_div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding-left: 50px;
-    padding-top: 55px;
-}
-
-.parent_story_div h4 {
-    color: var(--04, #202227);
-}
-
-.parent_story_div small {
-    color: var(--01, #696969);
-
-}
-
-.left_div {
-    width: 30%;
-}
-
-.right_div {
-    width: 70%;
-}
-
-.right_div h3 {
-    color: var(--04, #202227);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-}
-
-.right_div h6 {
-    color: var(--01, #696969);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    width: 235px;
-}
 
 
 .brandname {
@@ -213,7 +177,6 @@
     margin-bottom: 14px;
 }
 
-
 .story_details {
     color: var(--01, #696969);
     font-family: Poppins;
@@ -222,7 +185,7 @@
     font-weight: 400;
     line-height: 156%;
     width: 235px;
-margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .parent_text {
@@ -246,7 +209,7 @@ margin-bottom: 7px;
 
 
 
-.delete_icon{
+.delete_icon {
     border-radius: 4px;
     background: var(--04, #202227);
     padding: 10px;
@@ -256,7 +219,7 @@ margin-bottom: 7px;
 }
 
 
-.edit_delete_icons{
+.edit_delete_icons {
     float: right;
 }
 
@@ -280,6 +243,21 @@ margin-bottom: 7px;
     }
 
     .timeline-dot {
-        left: -12px !important;
+        left: -9px !important;
     }
+
+    .timeline-items::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 62% !important;
+        top: 20% !important;
+        background-color: #2f363e;
+        left: calc(6% - 1px);
+    }
+
+    .timeline-content {
+        margin-left: 100px;
+    }
+
 }

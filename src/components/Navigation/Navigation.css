@@ -70,9 +70,6 @@
   background-color: #333;
 }
 
-#myTopnav {
-  /* display: flex ; */
-}
 
 .topnav a {
   float: left;
@@ -150,8 +147,8 @@
 
   .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    /* right: 0; */
+    /* top: 0; */
 
   }
 
@@ -200,7 +197,7 @@
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .topnav.responsive {

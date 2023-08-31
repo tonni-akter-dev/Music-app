@@ -13,7 +13,6 @@ const Navigation = () => {
 
   const toggleResponsive = () => {
     console.log("clickl")
-    // setIsResponsive(true);
     setIsResponsive(prevState => !prevState);
   };
   return (
